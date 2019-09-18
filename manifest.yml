@@ -1,0 +1,11 @@
+---
+applications:
+  - name: simple-noise-app-bash
+    memory: 256M
+    instances: 1
+    disk_quota: 256M
+    command: sh ./simple-noise-app.sh
+    buildpacks:
+      - binary_buildpack
+    no-route: true
+    timeout: 300

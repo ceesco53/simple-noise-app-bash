@@ -5,6 +5,6 @@ endtime=$(date -ud "$runtime" +%s)
 
 while [ $(date -u +%s) -le $endtime ]
 do
-  sleep 0.05
+  sleep 0.00002
   echo "noise"
 done
